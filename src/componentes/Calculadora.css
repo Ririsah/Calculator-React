@@ -1,0 +1,156 @@
+/* Estrutuda geral da calculadora */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 16, 12);
+    max-width: 650px;
+    min-height: 800px;
+    margin: 50px 0 0 170px;
+    padding: 30px;
+    border: 3px solid;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        margin: 30px;
+        margin-top: 50px;
+    }
+}
+
+/* Estrutuda do display */
+
+.calculator-header {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    padding-bottom: 20px;
+}
+
+div > p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.onOff {
+    color: black;
+    background-color: aqua;
+    border: 3px solid;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    align-self: flex-end;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(199, 29%, 29%);
+    height: 685px;
+    border: 3px solid black;
+}
+
+.calculator-display {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 230px;
+}
+
+#display {
+    background-color: black;
+    width: 100%;
+    height: 120px;
+    padding: 0 10px;
+    border: 3px solid rgb(34, 34, 34);
+    color: rgb(0, 227, 235);
+    font-size: 1.5rem;
+}
+
+.gray, 
+.green, 
+.blue {
+    height: 7px;
+}
+
+.gray {
+    background-color: hsl(199, 29%, 29%);
+    border-bottom: 3px solid black;
+    border: none;
+}
+
+.green {
+    background-color: rgb(2, 224, 158);
+    border: 3px solid;
+    border-left: none;
+    border-right: none;
+}
+
+.blue {
+    background-color: rgb(4, 81, 126);
+    border: 3px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* Estrutuda dos botões */
+
+.calculator-buttons {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 2fr);
+    gap: 20px;
+    margin: 50px 20px 20px 20px;
+}
+
+.calculator-buttons > button {
+    font-size: 1.2rem;
+    color: white;
+    max-width: 140px;
+    height: 50px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.number-btn {
+    background-color: hsl(21, 22%, 13%);
+}
+
+.number-btn:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+
+.number-btn:active{
+    background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+    background-color: hsl(24, 60%, 5%);
+}
+
+.operator-btn:hover{
+    background-color: hsl(25, 55%, 10%);
+}
+
+.operator-btn:active{
+    background-color: hsl(26, 32%, 17%);
+}
+
+.clear-btn {
+    background-color: rgb(189, 135, 53);
+    margin: 20px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: black;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.clear-btn:hover{
+    background-color: rgb(221, 163, 77);
+}
+
+.clear-btn:active{
+    background-color: rgb(250, 203, 133);
+}
